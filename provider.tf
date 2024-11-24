@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  cloud {
+  backend "remote" {
     organization = "Babs45"
     workspaces {
       name = "sandbox"
