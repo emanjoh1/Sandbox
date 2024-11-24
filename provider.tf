@@ -5,6 +5,14 @@ terraform {
       version = "~> 5.0"
     }
   }
+}
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
+}
+
+terraform { 
   cloud { 
     
     organization = "Babs45" 
@@ -13,10 +21,4 @@ terraform {
       name = "sandbox" 
     } 
   } 
-
-}
-
-# Configure the AWS Provider
-provider "aws" {
-  region = "us-east-1"
 }
